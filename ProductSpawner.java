@@ -16,11 +16,13 @@ public class ProductSpawner extends Actor
     private int counterApple = 0;
     private int counterBerry = 0;
     private int counterBread = 0;
+    private int counterBomb = 0;
     
     public void act() {
         spawnApple();
         spawnBerry();
         spawnBread();
+        spawnBomb();
     }
     
     private void spawnApple() {
@@ -61,6 +63,19 @@ public class ProductSpawner extends Actor
         spawnFood(bread);
         
         counterBread = 0;
+    }
+    
+        private void spawnBomb() {
+        if(counterBomb <= 50) {
+            counterBomb++;
+            return;
+        }
+        
+        Bomb bomb = new Bomb();
+        
+        spawnFood(bomb);
+        
+        counterBomb = 0;
     }
     
     private void spawnFood(Food food) {

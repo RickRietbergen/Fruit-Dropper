@@ -35,4 +35,7 @@ public class Food extends Actor {
         
         setLocation(x, y + 2);
     }
+
+    
+    
 }

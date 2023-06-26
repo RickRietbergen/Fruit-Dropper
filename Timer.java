@@ -25,7 +25,7 @@ public class Timer extends Actor
         
         if (timer < 1){
             //dead
-            System.out.println("dead");
+            
             Greenfoot.setWorld(new MyWorld());
         }
         
