@@ -47,6 +47,10 @@ public class Marco extends Actor
         }
     }
     
+    private void s() {
+        
+    }
+    
     public int getLives()
     {
         return lives;
@@ -56,4 +60,5 @@ public class Marco extends Actor
     {
         return lives = amount;
     }
+    
 }
