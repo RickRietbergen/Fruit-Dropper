@@ -12,7 +12,17 @@ public class Food extends Actor {
         
     }
     
+    public void removeFood() {
+        World world = getWorld();
+        
+        if(isAtEdge()) 
+            world.removeObject(this);
+    }
+    
     public void sinkToTheBottom() {
         int y = getY();
+        int x = getX();
+        
+        setLocation(x, y + 2);
     }
 }
