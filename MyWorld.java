@@ -20,6 +20,7 @@ public class MyWorld extends World
         prepare();
         
         addObject(new ProductSpawner(), 0, 0);
+        addObject(new Timer(), 70, 15);
     }
     
     public void prepare()

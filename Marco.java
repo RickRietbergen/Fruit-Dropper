@@ -12,16 +12,11 @@ public class Marco extends Actor
      * Act - do whatever the Marco wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    int lives;
 
     public void act()
     {        
         robotMovement();
-    }
-
-    public Marco()
-    {
-        setLives(1000);
+        collision();
     }
 
     public void robotMovement()
@@ -47,18 +42,18 @@ public class Marco extends Actor
         }
     }
     
-    private void s() {
-        
+    private void collision() {
+        if(isTouching(Apple.class)){
+            removeTouching(Food.class);  
+            Timer.addToTimer(1);
+        }
+        if(isTouching(Bread.class)){
+            removeTouching(Food.class);  
+            Timer.addToTimer(5);
+        }
+        if(isTouching(Berry.class)){
+            removeTouching(Food.class);  
+            Timer.addToTimer(3);
+        }
     }
-    
-    public int getLives()
-    {
-        return lives;
-    }
-    
-    public int setLives(int amount)
-    {
-        return lives = amount;
-    }
-    
 }
