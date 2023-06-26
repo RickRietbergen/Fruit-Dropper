@@ -12,6 +12,16 @@ public class Food extends Actor {
         
     }
     
+    public void spawnProduct() {
+        World world = getWorld();
+        
+        int x = Greenfoot.getRandomNumber(world.getWidth());
+        
+        Food food = new Food();
+        
+        world.addObject(food, world.getHeight(), x);
+    }
+    
     public void removeFood() {
         World world = getWorld();
         
