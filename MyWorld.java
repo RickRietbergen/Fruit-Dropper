@@ -27,7 +27,7 @@ public class MyWorld extends World
     public void prepare()
     {
         Marco marco = new Marco();
-        addObject(marco,30,30);
+        addObject(marco,60,60);
     }
 
 }
