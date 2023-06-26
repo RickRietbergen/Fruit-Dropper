@@ -2,6 +2,7 @@
 class.Apple.image=apple1.png
 class.Berry.image=plum.png
 class.Bread.image=bread.png
+class.Marco.image=man01.png
 class.MyWorld.image=bluerock.jpg
 dependency1.from=MyWorld
 dependency1.to=ProductSpawner
