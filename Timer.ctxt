@@ -9,4 +9,6 @@ comment3.params=
 comment3.target=void\ updateImage()
 comment4.params=seconds
 comment4.target=void\ addToTimer(int)
-numComments=5
+comment5.params=
+comment5.target=void\ resetTimer()
+numComments=6

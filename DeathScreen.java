@@ -8,6 +8,8 @@ public class DeathScreen extends World {
     public DeathScreen() {
         super(800, 600, 1); // Set the size of the world
         prepare();
+        
+        addObject(new DeathTimer(), 0, 0);
     }
 
     private void prepare() {
@@ -20,7 +22,9 @@ public class DeathScreen extends World {
     @Override
     public void act() {
         getBackground().drawImage(backgroundImage, imageX, imageY);
-    }
+        
+        Timer.resetTimer();
+    }   
 }
 
 

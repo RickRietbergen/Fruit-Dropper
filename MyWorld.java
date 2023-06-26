@@ -27,6 +27,8 @@ public class MyWorld extends World
     {
         Marco marco = new Marco();
         addObject(marco,600,400);
+        
+        DeathTimer.resetDeathTimer();
     }
 
 }
