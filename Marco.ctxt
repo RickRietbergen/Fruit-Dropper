@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Marco
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Marco\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=Marco()
+comment3.params=
+comment3.target=void\ robotMovement()
+comment4.params=
+comment4.target=int\ getLives()
+comment5.params=amount
+comment5.target=int\ setLives(int)
+numComments=6

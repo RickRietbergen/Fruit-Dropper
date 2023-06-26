@@ -17,9 +17,15 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1200, 800, 1); 
+        prepare();
         
         addObject(new ProductSpawner(), 0, 0);
-        
     }
     
+    public void prepare()
+    {
+        Marco marco = new Marco();
+        addObject(marco,30,30);
+    }
+
 }
