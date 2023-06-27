@@ -22,6 +22,7 @@ public class MyWorld extends World
         addObject(new ProductSpawner(), 0, 0);
         addObject(new Timer(), 70, 15);
         Timer.setTime();
+        Marco.speed = 3;
     }
     
     public void prepare()

@@ -83,7 +83,7 @@ public class ProductSpawner extends Actor
     }
     
     private void spawnStone() {
-        if (counterStone <= 25) {
+        if (counterStone <= 60) {
             counterStone++;
             return;
         }
