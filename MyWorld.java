@@ -21,6 +21,7 @@ public class MyWorld extends World
         
         addObject(new ProductSpawner(), 0, 0);
         addObject(new Timer(), 70, 15);
+        addObject(new TotalTimer(), 100, 50);
         Timer.setTime();
         Marco.speed = 3;
     }

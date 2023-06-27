@@ -7,9 +7,9 @@ import java.util.TimerTask;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Timer extends Actor
+public class TotalTimer extends Actor
 {
-    private static int timer = 55*60; //about 60 seconds
+    private static int timer = 0; //about 60 seconds
  
     public void Timer()
     {
@@ -18,7 +18,7 @@ public class Timer extends Actor
      
     public void act()
     {
-        timer--;
+        timer++;
         if (timer % 55 == 0){
             updateImage();
         }
@@ -31,7 +31,7 @@ public class Timer extends Actor
      
     private void updateImage()
     {
-        setImage(new GreenfootImage("Time Remaining: " + timer/55, 20, Color.BLACK, Color.WHITE));
+        setImage(new GreenfootImage("Time Survived: " + timer/55, 20, Color.BLACK, Color.WHITE));
     }
     
     public static void addToTimer(int seconds) {
@@ -39,7 +39,7 @@ public class Timer extends Actor
     }
     
     public static void resetTimer() {
-        timer = 55*60;
+        timer = 0;
     }
     
     public static int getTime() {
@@ -47,7 +47,7 @@ public class Timer extends Actor
     }
     
     public static void setTime() {
-            timer = 55*60;
+            timer = 0;
     }
 }
 

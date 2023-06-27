@@ -24,6 +24,7 @@ public class DeathScreen extends World {
         getBackground().drawImage(backgroundImage, imageX, imageY);
         
         Timer.resetTimer();
+        TotalTimer.resetTimer();
         Marco.speed = 3;
         Marco.hasEffect = false;
     }   
