@@ -8,8 +8,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Food extends Actor {
     
-    public void act() {
-        
+    private int dropSpeed;
+    
+    public Food(int dropSpeed) {
+        this.dropSpeed = dropSpeed;
+    }
+    
+    public Food(int minDropSpeed, int maxDropSpeed) {
+        dropSpeed = minDropSpeed + Greenfoot.getRandomNumber(maxDropSpeed - minDropSpeed);
     }
     
     public void spawnProduct() {
@@ -17,7 +23,7 @@ public class Food extends Actor {
         
         int x = Greenfoot.getRandomNumber(world.getWidth());
         
-        Food food = new Food();
+        Food food = new Food(dropSpeed);
         
         world.addObject(food, world.getHeight(), x);
     }
@@ -33,9 +39,7 @@ public class Food extends Actor {
         int y = getY();
         int x = getX();
         
-        setLocation(x, y + 2);
+        setLocation(x, y + dropSpeed);
     }
-
-    
     
 }

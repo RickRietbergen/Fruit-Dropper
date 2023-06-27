@@ -34,7 +34,7 @@ public class ProductSpawner extends Actor
             return;
         }
         
-        Apple apple = new Apple();
+        Apple apple = new Apple(2);
         
         spawnFood(apple);
         
@@ -47,7 +47,7 @@ public class ProductSpawner extends Actor
             return;
         }
         
-        Berry berry = new Berry();
+        Berry berry = new Berry(2);
         
         spawnFood(berry);
         
@@ -60,7 +60,7 @@ public class ProductSpawner extends Actor
             return;
         }
         
-        Bread bread = new Bread();
+        Bread bread = new Bread(2);
         
         spawnFood(bread);
         
@@ -73,7 +73,7 @@ public class ProductSpawner extends Actor
             return;
         }
         
-        Bomb bomb = new Bomb();
+        Bomb bomb = new Bomb(3, 6);
         
         spawnFood(bomb);
         
@@ -98,7 +98,7 @@ public class ProductSpawner extends Actor
         
         int x = Greenfoot.getRandomNumber(world.getWidth());
         
-        world.addObject(food, x, 0);
+        world.addObject(food, x, 5);
     }
     
 }

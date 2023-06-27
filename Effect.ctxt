@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Effect
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Effect\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=duration
+comment1.target=Effect(int)
+comment2.params=function
+comment2.target=void\ startEffect(java.lang.Runnable)
+comment3.params=
+comment3.target=void\ endEffect()
+comment4.params=
+comment4.target=int\ getDuration()
+comment5.params=duration
+comment5.target=void\ setDuration(int)
+comment6.params=reset
+comment6.target=void\ setReset(java.lang.Runnable)
+numComments=7
