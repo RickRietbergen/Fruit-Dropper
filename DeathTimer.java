@@ -17,7 +17,7 @@ public class DeathTimer extends Actor
         
         if (timer < 1){
             
-            Greenfoot.setWorld(new MyWorld());
+            Greenfoot.setWorld(new StartScreen());
         }
         
     }
