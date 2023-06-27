@@ -19,6 +19,7 @@ public class ProductSpawner extends Actor
     private int counterBomb = 0;
     private int counterStone = 0;
     private int counterRocket = 0;
+    private int counterGoldenApple = 0;
     
     public void act() {
         spawnApple();
@@ -27,6 +28,7 @@ public class ProductSpawner extends Actor
         spawnBomb();
         spawnStone();
         spawnRocket();
+        spawnGoldenApple();
     }
     
     private void spawnApple() {
@@ -57,7 +59,7 @@ public class ProductSpawner extends Actor
     }
     
     private void spawnBread() {
-        if(counterBread <= 35) {
+        if(counterBread <= 50) {
             counterBread++;
             return;
         }
@@ -117,6 +119,20 @@ public class ProductSpawner extends Actor
         spawnFood(rocket);
         
         counterRocket = 0;
+    }
+    
+        private void spawnGoldenApple() {
+        
+        if (counterGoldenApple <= 1000) {
+            counterGoldenApple++;
+            return;
+        }
+        
+        GoldenApple goldenApple = new GoldenApple(4);
+        
+        spawnFood(goldenApple);
+        
+        counterGoldenApple = 0;
     }
     
     private void spawnFood(Food food) {
