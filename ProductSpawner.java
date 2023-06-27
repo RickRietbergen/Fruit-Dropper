@@ -80,11 +80,22 @@ public class ProductSpawner extends Actor
         counterBomb = 0;
     }
     
-            private void spawnRocket() {
-        if(counterRocket <= 100) {
-            counterRocket++;
-            return;
-        }
+        private void spawnRocket() {
+        int time = Timer.getTime();
+        
+            if (time >= 120){
+                if(counterRocket <= 40) {
+                    counterRocket++;
+                    return;
+                }
+            }
+                
+            if (time <= 120){
+                if(counterRocket <= 100) {
+                    counterRocket++;
+                    return;
+                }
+            }
         
         Rocket rocket = new Rocket(20);
         
