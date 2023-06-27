@@ -70,5 +70,13 @@ public class Marco extends Actor
             removeTouching(Food.class);  
             Timer.addToTimer(-10);
         }
+        if (isTouching(Stone.class)) {
+            removeTouching(Stone.class); 
+            SlowEffect effect = new SlowEffect(3);
+            world.addObject(effect, 0, 0);
+            effect.start();
+            hasEffect = true;
+            Timer.addToTimer(-3);
+        }
     }
 }
