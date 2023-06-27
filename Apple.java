@@ -11,6 +11,11 @@ public class Apple extends Food {
      * Act - do whatever the Apple wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
+    public Apple(int dropSpeed) {
+        super(dropSpeed);
+    }
+    
     public void act() {
         sinkToTheBottom();
         removeFood();

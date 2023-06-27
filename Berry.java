@@ -11,6 +11,11 @@ public class Berry extends Food {
      * Act - do whatever the Berry wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
+    public Berry(int dropSpeed) {
+        super(dropSpeed);
+    }
+    
     public void act() {
         sinkToTheBottom();
         removeFood();

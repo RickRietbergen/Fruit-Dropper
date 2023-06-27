@@ -12,6 +12,11 @@ public class Bread extends Food
      * Act - do whatever the Bread wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
+    public Bread(int dropSpeed) {
+        super(dropSpeed);
+    }
+    
     public void act() {
         sinkToTheBottom();
         removeFood();
