@@ -70,5 +70,9 @@ public class Marco extends Actor
             removeTouching(Food.class);  
             Timer.addToTimer(-10);
         }
+        if(isTouching(Rocket.class)){
+            removeTouching(Food.class);  
+            Timer.addToTimer(-50);
+        }
     }
 }

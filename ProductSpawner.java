@@ -42,7 +42,7 @@ public class ProductSpawner extends Actor
     }
     
     private void spawnBerry() {
-        if (counterBerry <= 30) {
+        if (counterBerry <= 100) {
             counterBerry++;
             return;
         }
@@ -81,16 +81,16 @@ public class ProductSpawner extends Actor
     }
     
             private void spawnRocket() {
-        if(counterBomb <= 200) {
-            counterBomb++;
+        if(counterRocket <= 100) {
+            counterRocket++;
             return;
         }
         
-        Bomb bomb = new Bomb();
+        Rocket rocket = new Rocket(20);
         
-        spawnFood(bomb);
+        spawnFood(rocket);
         
-        counterBomb = 0;
+        counterRocket = 0;
     }
     
     private void spawnFood(Food food) {
