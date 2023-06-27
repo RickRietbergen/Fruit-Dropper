@@ -21,6 +21,7 @@ public class MyWorld extends World
         
         addObject(new ProductSpawner(), 0, 0);
         addObject(new Timer(), 70, 15);
+        Timer.setTime();
     }
     
     public void prepare()

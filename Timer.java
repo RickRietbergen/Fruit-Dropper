@@ -45,7 +45,11 @@ public class Timer extends Actor
     }
     
     public static int getTime() {
-        return timer;
+        return timer/55;
+    }
+    
+    public static void setTime() {
+            timer = 55*60;
     }
 }
 
