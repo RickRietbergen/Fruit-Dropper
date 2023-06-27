@@ -5,13 +5,18 @@ class.Bomb.image=bomb.png
 class.Bread.image=bread.png
 class.Marco.image=man01.png
 class.MyWorld.image=bluerock.jpg
+class.Rocket.image=Rocket.png
 class.StartButton.image=Start-Button-Vector.png
 class.StartScreen.image=space.jpg
+<<<<<<< HEAD
 class.Stone.image=rock.png
+=======
+>>>>>>> e3782eb4dd7f047add79f22dbfe1b36aa747cc46
 dependency1.from=DeathScreen
 dependency1.to=DeathTimer
 dependency1.type=UsesDependency
 dependency10.from=Marco
+<<<<<<< HEAD
 dependency10.to=Food
 dependency10.type=UsesDependency
 dependency11.from=Marco
@@ -40,11 +45,42 @@ dependency18.to=Marco
 dependency18.type=UsesDependency
 dependency19.from=DeathTimer
 dependency19.to=MyWorld
+=======
+dependency10.to=Timer
+dependency10.type=UsesDependency
+dependency11.from=Marco
+dependency11.to=Bread
+dependency11.type=UsesDependency
+dependency12.from=Marco
+dependency12.to=Berry
+dependency12.type=UsesDependency
+dependency13.from=Marco
+dependency13.to=Bomb
+dependency13.type=UsesDependency
+dependency14.from=Timer
+dependency14.to=DeathScreen
+dependency14.type=UsesDependency
+dependency15.from=StartButton
+dependency15.to=MyWorld
+dependency15.type=UsesDependency
+dependency16.from=Effect
+dependency16.to=Marco
+dependency16.type=UsesDependency
+dependency17.from=SpeedEffect
+dependency17.to=Marco
+dependency17.type=UsesDependency
+dependency18.from=DeathTimer
+dependency18.to=MyWorld
+dependency18.type=UsesDependency
+dependency19.from=ProductSpawner
+dependency19.to=Apple
+>>>>>>> e3782eb4dd7f047add79f22dbfe1b36aa747cc46
 dependency19.type=UsesDependency
 dependency2.from=DeathScreen
 dependency2.to=Timer
 dependency2.type=UsesDependency
 dependency20.from=ProductSpawner
+<<<<<<< HEAD
 dependency20.to=Apple
 dependency20.type=UsesDependency
 dependency21.from=ProductSpawner
@@ -55,10 +91,23 @@ dependency22.to=Bread
 dependency22.type=UsesDependency
 dependency23.from=ProductSpawner
 dependency23.to=Bomb
+=======
+dependency20.to=Berry
+dependency20.type=UsesDependency
+dependency21.from=ProductSpawner
+dependency21.to=Bread
+dependency21.type=UsesDependency
+dependency22.from=ProductSpawner
+dependency22.to=Bomb
+dependency22.type=UsesDependency
+dependency23.from=ProductSpawner
+dependency23.to=Rocket
+>>>>>>> e3782eb4dd7f047add79f22dbfe1b36aa747cc46
 dependency23.type=UsesDependency
 dependency24.from=ProductSpawner
 dependency24.to=Food
 dependency24.type=UsesDependency
+<<<<<<< HEAD
 dependency3.from=StartScreen
 dependency3.to=StartButton
 dependency3.type=UsesDependency
@@ -85,6 +134,34 @@ editor.fx.0.width=816
 editor.fx.0.x=509
 editor.fx.0.y=128
 height=1048
+=======
+dependency3.from=MyWorld
+dependency3.to=ProductSpawner
+dependency3.type=UsesDependency
+dependency4.from=MyWorld
+dependency4.to=Timer
+dependency4.type=UsesDependency
+dependency5.from=MyWorld
+dependency5.to=Marco
+dependency5.type=UsesDependency
+dependency6.from=MyWorld
+dependency6.to=DeathTimer
+dependency6.type=UsesDependency
+dependency7.from=Marco
+dependency7.to=SpeedEffect
+dependency7.type=UsesDependency
+dependency8.from=Marco
+dependency8.to=Apple
+dependency8.type=UsesDependency
+dependency9.from=Marco
+dependency9.to=Food
+dependency9.type=UsesDependency
+editor.fx.0.height=830
+editor.fx.0.width=1550
+editor.fx.0.x=-7
+editor.fx.0.y=-7
+height=830
+>>>>>>> e3782eb4dd7f047add79f22dbfe1b36aa747cc46
 package.numDependencies=24
 package.numTargets=17
 project.charset=UTF-8
@@ -186,7 +263,11 @@ target4.width=120
 target4.x=0
 target4.y=0
 target5.height=70
+<<<<<<< HEAD
 target5.name=Stone
+=======
+target5.name=Rocket
+>>>>>>> e3782eb4dd7f047add79f22dbfe1b36aa747cc46
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=120
@@ -221,7 +302,12 @@ target9.width=120
 target9.x=0
 target9.y=0
 version=3.0.0
+<<<<<<< HEAD
 width=1936
 world.lastInstantiated=StartScreen
+=======
+width=1550
+world.lastInstantiated=MyWorld
+>>>>>>> e3782eb4dd7f047add79f22dbfe1b36aa747cc46
 xPosition=0
 yPosition=0
