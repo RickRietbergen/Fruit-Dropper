@@ -31,7 +31,13 @@ public class Timer extends Actor
      
     private void updateImage()
     {
-        setImage(new GreenfootImage("Time Remaining: " + timer/55, 20, Color.BLACK, Color.WHITE));
+        if (timer <= 10 * 55){
+            setImage(new GreenfootImage("Time Remaining: " + timer/55, 30, Color.RED, Color.WHITE));
+        }
+        if (timer > 10 * 55){
+            setImage(new GreenfootImage("Time Remaining: " + timer/55, 30, Color.BLACK, Color.WHITE));
+        }
+        
     }
     
     public static void addToTimer(int seconds) {

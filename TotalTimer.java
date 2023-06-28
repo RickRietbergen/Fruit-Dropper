@@ -31,7 +31,7 @@ public class TotalTimer extends Actor
      
     private void updateImage()
     {
-        setImage(new GreenfootImage("Time Survived: " + timer/55, 20, Color.BLACK, Color.WHITE));
+        setImage(new GreenfootImage("Time Survived: " + timer/55, 30, Color.BLACK, Color.WHITE));
     }
     
     public static void addToTimer(int seconds) {
