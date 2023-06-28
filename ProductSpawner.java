@@ -22,13 +22,13 @@ public class ProductSpawner extends Actor
     private int counterGoldenApple = 0;
     
     public void act() {
+        spawnGoldenApple();
         spawnApple();
         spawnBerry();
         spawnBread();
         spawnBomb();
         spawnStone();
         spawnRocket();
-        spawnGoldenApple();
     }
     
     private void spawnApple() {
@@ -121,7 +121,7 @@ public class ProductSpawner extends Actor
         counterRocket = 0;
     }
     
-        private void spawnGoldenApple() {
+    private void spawnGoldenApple() {
         
         if (counterGoldenApple <= 1000) {
             counterGoldenApple++;

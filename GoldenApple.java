@@ -13,10 +13,7 @@ public class GoldenApple extends Food {
      */
     
     public GoldenApple(int dropSpeed) {
-                super(dropSpeed);
-        
-        int percent = 5; // for 50% larger image
-        getImage().scale(getImage().getWidth()*percent/100, getImage().getHeight()*percent/100);
+        super(dropSpeed);
     }
     
     public void act() {

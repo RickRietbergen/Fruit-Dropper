@@ -10,6 +10,8 @@ public class Food extends Actor {
 
     private int dropSpeed;
 
+    private Actor actor;
+    
     public Food(int dropSpeed) {
         this.dropSpeed = dropSpeed;
     }
@@ -41,5 +43,5 @@ public class Food extends Actor {
 
         setLocation(x, y + dropSpeed);
     }
-
+    
 }
